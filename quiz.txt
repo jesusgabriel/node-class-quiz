@@ -1,0 +1,99 @@
+Node Quiz Name : Andy Melo
+1) What is node.js and why should we use it?
+---Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed device
+2) Does NPM come bundled with node.js when you install it?
+---Yes, the nodejs package includes both node and npm executables. The code for ... Only node.js packages comes with npm. so if you are installing using an .msi , .exe , .dmg .pkg , .deb or using a package installer like apt-get
+3) What is the function used to send a file to a browser from an express app?
+---app.get('/img/bg.png', function(req, res) {
+      res.sendFile('public/img/background.png')
+    })
+4) What does the following code do? app.use(bodyParser.json());
+---Parses the text as JSON and exposes the resulting object on req.body.
+5) What does the following code do? app.use(express.static('public'));
+---Pass the name of the directory that contains the static assets to the express.static middleware function to start serving the files directly. For example, use the following code to serve images, CSS files, and JavaScript files in a directory named public
+6) Please create a basic outline for a CRUD application for the following:
+I am your client, and I need an API for a stock market app I am building. Happily, you got the
+job!!
+I need the following data:
+- stock name
+- stock symbol
+- stock price
+- time.date of price
+- market instrument is traded on
+I will need the the full complement of CRUD for my API. Read should include the ability to
+retrieve all the stocks, or one stock.
+Create an outline or plan for the data, and the end points. No need to write the code, but I do
+want to see the plan that you would implement the API from. Use the following as a model:
+{
+ "name": " Si mba",
+ "i d": 1,
+ "age": 3,
+ "pri de": "t he cool cat s",
+ "gender": " mal e"
+}
+{
+ " GET /li ons": {
+ "desc": "ret ur ns all li ons",
+ "response": "200 appli cati on/j son",
+ "dat a": [{}, {}, {}]
+ },
+ " GET /li ons/:i d": {
+ "desc": "ret ur ns one li on r espr esent ed by its i d",
+ "response": "200 appli cati on/j son",
+ "dat a": {}
+ },
+ " POST /li ons": {
+ "desc": "cr eat e and r et ur ns a new li on uisng t he post ed obj ect as t he li on",
+ "response": "201 appli cati on/j son",
+ "dat a": {}
+ },
+ " PUT /li ons/:i d": {
+ "desc": "updat es and r et ur ns t he mat chi ng li on wit h t he post ed updat e
+obj ect",
+ "response": "200 appli cati on/j son",
+ "dat a": {}
+ },
+ " DELETE /li ons/:i d": {
+ "desc": "del et es and r et ur ns t he mat chi ng li on",
+ "response": "200 appli cati on/j son",
+ "dat a": {}
+ }
+}
+7) What is the “event Loop”?
+---is a single-threaded application, but it can support concurrency via the concept of event and callbacks. Every API of Node.js is asynchronous and being single-threaded, they use async function calls to maintain concurrency. Node uses observer pattern.
+8) What is a callback?
+---A callback is a function called at the completion of a given task; this prevents any blocking, and allows other code to be run in the meantime
+9) Please explain synchronous vs asynchronous behavior.
+10) What is package.json?
+---package.json - this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies
+11) Which module is used for file based operations?
+---var fs = require("fs")
+12) How will you open a file using node?
+---var fs = require("fs");
+   var path = "c:\\Temp\\Test.txt";
+      fs.open(path, "w+", function(error, fd) {
+          if (error) {
+            console.error("open error:  " + error.message);
+              } else {
+              console.log("Successfully opened " + path);
+          }
+      });
+13) What is the purpose of __dirname variable?
+--- __dirname is always the directory in which the currently, there any reason to use the __dirname variable instead of just a regular
+14) Can you access the DOM in node?
+--- No, For example there is the very good jsdom library if you really need access to the DOM, and node-htmlparser, What JSDom does is simulate one so that you can use DOM-centric libraries like jQuery in your node.js code
+15) Explain briefly how node.js solves the problem of blocking i/o.
+---
+16) What is the most common used framework used in node.js? Hint: It’s used to write web
+servers.
+---
+17) Please write a basic route using the get verb that returns all the items from an array in JSON
+format. Hint: We did this in class…
+18) What does CRUD stand for?
+---This is the place where you store information for your web websites (or applications). CRUD is an acronym for Create, Read, Update and Delete.
+19) Who developed node.js?
+---Ryan Dahl author original
+20) How do we make code in a file (module) in our project accessible to other modules in our
+project? Please describe what you need to do in the module with the code, and in the module
+that wishes to use that code.
+---
